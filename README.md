@@ -33,4 +33,4 @@ ivashova@list.ru
 
 **Публикация**
 
--Мой сайт размещен по ссылке: https://olgaivashova.github.io/mesto/
+-Мой сайт размещен по ссылке: https://olgaivashova.github.io/mesto-react/
