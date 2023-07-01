@@ -39,8 +39,8 @@ function Main({ onEditProfile, onAddPopup, onAvatar, onCard, card, onDelete }) {
         <ul className="elements__container">
          {card.map((data) => {
             return (
-              <li className="elements__grid-item" >
-                <Card card={data} key={data._id} onCard={onCard} onDelete={onDelete}/>
+              <li className="elements__grid-item" key={data._id}>
+                <Card card={data}  onCard={onCard} onDelete={onDelete}/>
               </li>
             );
           })} 

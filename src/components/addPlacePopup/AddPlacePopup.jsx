@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PopupWithForm from "../popupWithForm/PopupWithForm";
 
 
@@ -18,6 +18,18 @@ function AddPlacePopup (props) {
     evt.preventDefault();
     props.onAddPlace({title: title, link: link})
   }
+
+  function resetAddForm () {
+    setTitle('')
+    setLink('')
+  }
+
+  useEffect(() => {
+    if (!props.isOpen) {
+      resetAddForm()
+    }
+  }, [props.isOpen, resetAddForm])
+
   return (<PopupWithForm
     name="add"
     title="Новое место"

@@ -101,7 +101,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: '#000'}}>
       <div className="page__content">
         <Header />
         <CurrentUserContext.Provider value={currentUser}>
